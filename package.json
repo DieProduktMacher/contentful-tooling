@@ -1,0 +1,18 @@
+{
+  "name": "contentful-tooling",
+  "version": "0.1.0",
+  "description": "Collection of useful packages for easier and standardised integration of Contentful based web applications",
+  "repository": "https://github.com/DieProduktMacher/contentful-tooling.git",
+  "license": "UNLICENSED",
+  "author": "DieProduktMacher GmbH<code@produktmacher.com>",
+  "workspaces": ["migrations"],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@dieproduktmacher/prettier-config": "^0.1.1",
+    "prettier": "^3.0.3"
+  },
+  "scripts": {
+    "migration-tool": "npm run migration-tool --workspace=migrations",
+    "prettier": "prettier . --write"
+  }
+}
